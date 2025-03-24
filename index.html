@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Car Sales</title>
+    <meta name="description" content="Explore luxury cars from top brands like Audi, BMW, and more. Find your dream car today!">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Happy+Monkey&display=swap" rel="stylesheet"></head>
+<body>
+
+    <header>
+        <div class="logo">Luxury Cars</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#finance">Finance</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>                
+                <div>
+                    <i class='fas fa-search' id="search-icon"></i>        
+                    <div class="search-box" >
+                        <input type="search" name="" id="" placeholder="search your dream">
+                    </div>
+                </div>
+            </ul>        
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div >
+            <div class="slide" style="background-image: url('images/audi.jpg');">
+                <div class="overlay">
+                    <h1>Drive Your Dream</h1>
+                    <p>Experience the ultimate in luxury and performance.</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/bmw.jpg');">
+                <div class="overlay">
+                    <h1>Luxury Redefined</h1>
+                    <p>Explore our exclusive collection of premium vehicles.</p>
+                    <a href="#" class="btn">Explore Models</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Models</h2>
+        <div class="car-grid">
+            <div class="car-card" data-info="Top performance and luxury." data-images="images/audi a6.jpg" data-title="Audi A6">
+                <img src="images/audi a6.jpg" alt="Audi A6">
+                <h3>Audi A6</h3>
+                <p>Price: <span>$60,000</span></p>
+                <button class="btn view-details">View Details</button>
+            </div>
+            <div class="car-card" data-info="The epitome of luxury." data-images="images/Bmw 5 series.jpg" data-title="BMW 5 Series">
+                <img src="images/Bmw 5 series.jpg" alt="BMW 5 Series">
+                <h3>BMW 5 Series</h3>
+                <p>Price: <span>$65,000</span></p>
+                <button class="btn view-details">View Details</button>
+            </div>
+            <div class="car-card" data-info="Sporty and elegant." data-images="images/Mercedes Benz C-Class.jpg" data-title="Mercedes Benz C-Class">
+                <img src="images/Mercedes Benz C-Class.jpg" alt="Mercedes Benz C-Class">
+                <h3>Mercedes Benz C-Class</h3>
+                <p>Price: <span>$75,000</span></p>
+                <button class="btn view-details">View Details</button>
+            </div>
+            <div class="car-card" data-info="A classic icon." data-images="images/porsche 911 Carrera s.jpg" data-title="Porsche 911 carrera s">
+                <img src="images/porsche 911 carrera s.jpg" alt="Porsche 911 carrera s">
+                <h3>Porsche 911 Carrera S</h3>
+                <p>Price: <span>$120,000</span></p>
+                <button class="btn view-details">View Details</button>
+            </div>
+            <div class="car-card" data-info="A super hyper car." data-images="images/Lamborgini Aventador Roadster.jpg" data-title="Lamborgini Aventador Roadster">
+                <img src="images/Lamborgini Aventador roadster.jpg" alt="Lamborgini Aventador Roadster">
+                <h3>Lamborgini Aventador Roadster</h3>
+                <p>Price: <span>$460,000</span></p>
+                <button class="btn view-details">View Details</button>
+            </div>
+            <div class="car-card" data-info=" stunning aesthetics, combined with cutting-edge technology." data-images="images/Buggati Veron super sportz.jpg" data-title="Buggati Veron super sportz">
+                <img src="images/Buggati Veron super sportz.jpg" alt="Buggati Veron super sportz">
+                <h3>Buggati Veron super sportz</h3>
+                <p>Price: <span>$3,000,000</span></p>
+                <button class="btn view-details">View Details</button>
+            </div>
+            <div class="car-card" data-info=" A symbol of automotive excellence." data-images="images/nissan gtr r35.jpg" data-title="Nissan GTR R35">
+                <img src="images/nissan gtr r35.jpg" alt="nissan gtr r35">
+                <h3>Nissan GTR R35</h3>
+                <p>Price: <span>$215,000</span></p>
+                <button class="btn view-details">View Details</button>
+            </div>
+            <!-- <div class="car-card" data-info="A stunning fusion of art and engineering." data-images="images/Pagani Huayra Roadster.jpg" data-title="Pagani Huayra Roadster">
+                <img src="images/Pagani Huayra Roadster.jpg" alt="Pagani Huayra Roadster">
+                <h3>Pagani Huayra Roadster</h3>
+                <p>Price: <span>$4,000,000</span></p>
+                <button class="btn view-details">View Details</button>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>User Reviews</h2>
+        <div class="review-form">
+            <h3>Leave a Review</h3>
+            <input type="text" id="reviewer-name" placeholder="Your Name" required>
+            <textarea id="review-text" placeholder="Write your review..." required></textarea>
+            <button id="submit-review" class="btn">Submit</button>
+        </div>
+        <div class="reviews-list"></div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="contact-name" placeholder="Your Name" required>
+            <input type="email" id="contact-email" placeholder="Your Email" required>
+            <textarea id="contact-message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luxury Cars. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Modal for Car Details -->
+    <div id="car-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-info"></p>
+        </div>
+    </div>
+    <!-- link with java script  -->
+    <script src="main.js"></script>
+</body>
+</html>
